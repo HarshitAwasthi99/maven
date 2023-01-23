@@ -26,3 +26,9 @@ jobs:
       with:
        name: Package
        path: staging
+       
+    - name: Download a Build Artifact
+      uses: actions/download-artifact@v3.0.2
+      with:
+       name: Package
+       path: ./
