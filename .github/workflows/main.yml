@@ -20,7 +20,7 @@ jobs:
         distribution: 'temurin'
         overwrite-settings: 'false'
     - name: Build with Maven
-      run: mvn clean install --file pom.xml sonar:sonar -Dsonar.login=a1148d23027f95b2d8ca4f1a65590d18a07846a9 -Dsonar.host.url=http://20.236.128.59:9000 -Dsonar.projectKey=harshit
+      run: mvn clean package --file pom.xml sonar:sonar -Dsonar.login=a1148d23027f95b2d8ca4f1a65590d18a07846a9 -Dsonar.host.url=http://20.236.128.59:9000 -Dsonar.projectKey=harshit
 
     - run: mkdir staging && cp target/*.jar staging
     - uses: actions/upload-artifact@v3
