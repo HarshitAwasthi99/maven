@@ -21,6 +21,7 @@ jobs:
         overwrite-settings: 'false'
     - name: Build with Maven
       run: mvn install
+    - run: mvn deploy 
     - run: mkdir staging && cp target/*.jar staging
     - uses: actions/upload-artifact@v3
       with:
