@@ -16,8 +16,8 @@ jobs:
       uses: peter-evans/create-pull-request@v7
       with:
           base: main
-          committer: ${{ github.actor }}
-          author: ${{ github.actor }}
+          committer: "Harshit"
+          author: "Awasthi"
           branch: "example-patches"
           delete-branch: true
           title: '[Example] Update report'
