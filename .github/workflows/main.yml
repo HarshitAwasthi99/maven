@@ -16,7 +16,7 @@ jobs:
       uses: peter-evans/create-pull-request@v7
       with:
           base: main
-          committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          committer: ${{ github.actor }}
           author: ${{ github.actor }}
           branch: "example-patches"
           delete-branch: true
