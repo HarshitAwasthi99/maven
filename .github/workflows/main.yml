@@ -17,7 +17,7 @@ jobs:
       with:
           base: main
           committer: "Harshit"
-          author:  ${{ github.actor }}
+          author:  "harshitawasthi2607@gmail.com"
           branch: "example-patches"
           delete-branch: true
           title: '[Example] Update report'
