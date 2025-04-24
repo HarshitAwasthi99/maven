@@ -16,13 +16,12 @@ jobs:
       uses: peter-evans/create-pull-request@v7
       with:
           base: main
-          commit-message: Update report
           committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-          author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
-          signoff: false
-          branch: example-patches
+          author: ${{ github.actor }}
+          branch: "example-patches"
           delete-branch: true
           title: '[Example] Update report'
+          token: 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
           body: |
             Update report
             - Updated with *today's* date
